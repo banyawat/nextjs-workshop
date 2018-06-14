@@ -6,11 +6,19 @@
   "author": "Banyawat Kaewsamer <banyawat@thinknet.co.th>",
   "license": "MIT",
   "scripts": {
-    "dev": "next"
+    "dev": "nodemon -w server ./server/server.js --exec babel-node -e js",
+    "build": "next build; babel server -d dist --copy-files",
+    "start": "node ./dist/server.js"
   },
   "dependencies": {
+    "express": "^4.16.3",
     "next": "^6.0.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.48",
+    "@babel/node": "^7.0.0-beta.48",
+    "nodemon": "^1.17.5"
   }
 }
