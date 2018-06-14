@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:banyawat/nextjs-workshop.git",
+  "author": "Banyawat Kaewsamer <banyawat@thinknet.co.th>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next"
+  },
+  "dependencies": {
+    "next": "^6.0.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  }
+}
