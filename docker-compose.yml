@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+    nextjs-workshop:
+        image: registry.thinknet.co.th/sredev/node:8.9
+        command: yarn dev
+        environment:
+                NODE_ENV: dev
+                NODE_PORT: 3000
+                NOT_SECRET: 'https://www.google.co.th'
+        ports:
+            - 3000:3000
+        volumes:
+            - .:/usr/src/app
+            
+networks:
+    default:
+        external:
+            name: banyawat

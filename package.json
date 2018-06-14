@@ -13,6 +13,7 @@
   "dependencies": {
     "@zeit/next-sass": "^0.2.0",
     "express": "^4.16.3",
+    "htmlescape": "^1.1.1",
     "next": "^6.0.3",
     "node-sass": "^4.9.0",
     "react": "^16.4.0",

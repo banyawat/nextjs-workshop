@@ -1,5 +1,8 @@
 import Document, { Head, Main, NextScript } from 'next/document'
+import htmlescape from 'htmlescape'
 import '../src/styles/index.scss'
+
+const { env } = process
 
 export default class MyDocument extends Document {
   render () {
@@ -14,6 +17,9 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+          <script
+            dangerouslySetInnerHTML={{ __html: `__ENV__= ${htmlescape(env)}` }}
+          />
           <NextScript />
         </body>
       </html>
