@@ -15,9 +15,14 @@
     "express": "^4.16.3",
     "htmlescape": "^1.1.1",
     "next": "^6.0.3",
+    "next-redux-wrapper": "^2.0.0-beta.6",
     "node-sass": "^4.9.0",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.48",
